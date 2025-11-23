@@ -7,7 +7,7 @@ function waitFor(element, eventName) {
     element.addEventListener(eventName, () => {
       resolve(message);
     });
-  }).then((value) => printMessage(value));
+  });
 }
 
 const printMessage = (message) => {
